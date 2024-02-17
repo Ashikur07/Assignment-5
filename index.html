@@ -1,12 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind + daisy ui addded -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .inter-font {
+            font-family: "Inter", sans-serif;
+        }
+
+        .releway-font {
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nav-bus': 'rgb(29, 209, 0)',
+                        'nav-bus-bg': 'rgba(29, 209, 0, 0.1)',
+                        'nav-bus-border': 'rgba(29, 209, 0, 0.4)',
+                        'button-text' : 'rgb(3, 7, 18)',
+
+                    }
+                }
+            }
+        }
+    </script>
+
     <title>Online bus tecket</title>
 </head>
+
 <body>
-    
+    <header class="releway-font w-[1171px] mx-auto">
+
+        <!-- navber -->
+        <nav class="mt-10">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium text-[18px]">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+
+                        </ul>
+                    </div>
+                    <a class="font-extrabold text-4xl">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-medium text-[18px]">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn font-bold text-xl text-nav-bus bg-nav-bus-bg border-[1px] border-nav-bus-border px-6">Bus
+                        <img src="images/bus-icon.png" alt=""></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner section -->
+        <section class="h-[550px] bg-[url(images/banner.png)] bg-no-repeat mt-7 text-center text-white">
+            <h1 class="font-extrabold text-[64px] pt-[70px]">End-to-End Travel with <br><span class="text-nav-bus">P Paribahan</span></h1>
+            <p class="pb-8 inter-font">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined . </p>
+            <button class="btn bg-nav-bus border-none px-8 font-bold text-[18px] text-button-text">Buy Tickets</button>
+
+        </section>
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
