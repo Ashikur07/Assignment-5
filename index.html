@@ -34,6 +34,8 @@
                         'nav-bus-bg': 'rgba(29, 209, 0, 0.1)',
                         'nav-bus-border': 'rgba(29, 209, 0, 0.4)',
                         'button-text' : 'rgb(3, 7, 18)',
+                        'cupon-col1':'rgb(255, 191, 15)',
+                        'cupon-col2':'rgb(247, 140, 156)',
 
                     }
                 }
@@ -44,8 +46,9 @@
     <title>Online bus tecket</title>
 </head>
 
-<body>
-    <header class="releway-font w-[1171px] mx-auto">
+<body class="releway-font">
+    <!-- header section -->
+    <header class="w-[1171px] mx-auto">
 
         <!-- navber -->
         <nav class="mt-10">
@@ -95,7 +98,52 @@
 
     </header>
 
+
+    <!-- Main section -->
     <main>
+        <!-- Best offer you section -->
+        <section class="my-[110px] w-[1171px] mx-auto text-center">
+            <h1 class="font-bold text-[40px] text-button-text">Best offers for you</h1>
+
+            <!-- cupon part -->
+            <div class="flex gap-6 mt-12">
+
+                <!-- 15% off cupon -->
+                <div class="h-[180px] bg-cupon-col1 w-full rounded-3xl flex">
+                    <div class="inter-font space-y-1 px-14 pt-7">
+                        <h1 class="text-[40px] font-extrabold">15% OFF</h1>
+                        <h5 class="font-semibold text-xl">on your next purchase</h5>
+                        <p class="font-medium text-base">use by January 2024</p>
+                    </div>
+                    <img class="h-full" src="images/cupon-devider.png" alt="">
+                    <div class="pl-6 pt-14">
+                        <h1 class="text-3xl font-bold">NEW15</h1>
+                        <p class="text-xl font-medium">Coupon Code</p>
+                        
+                    </div>
+                </div>
+
+                <!-- 20% off cupon -->
+                <div class="h-[180px] bg-cupon-col2 w-full rounded-3xl flex">
+                    <div class="inter-font space-y-1 px-14 pt-7">
+                        <h1 class="text-[40px] font-extrabold">20% OFF</h1>
+                        <h5 class="font-semibold text-xl">on your next purchase</h5>
+                        <p class="font-medium text-base">use by January 2024</p>
+                    </div>
+                    <img class="h-full" src="images/cupon-devider.png" alt="">
+                    <div class="pl-6 pt-14">
+                        <h1 class="text-3xl font-bold">Couple 20</h1>
+                        <p class="text-xl font-medium">Coupon Code</p>
+                        
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <!-- button -->
+            <button class="btn mt-16 text-nav-bus border-[1px] border-nav-bus-border px-6 bg-white font-bold text-base">See All Offers</button>
+        </section>
 
     </main>
 
