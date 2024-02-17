@@ -33,9 +33,12 @@
                         'nav-bus': 'rgb(29, 209, 0)',
                         'nav-bus-bg': 'rgba(29, 209, 0, 0.1)',
                         'nav-bus-border': 'rgba(29, 209, 0, 0.4)',
-                        'button-text' : 'rgb(3, 7, 18)',
-                        'cupon-col1':'rgb(255, 191, 15)',
-                        'cupon-col2':'rgb(247, 140, 156)',
+                        'button-text': 'rgb(3, 7, 18)',
+                        'cupon-col1': 'rgb(255, 191, 15)',
+                        'cupon-col2': 'rgb(247, 140, 156)',
+                        'main-part': 'rgb(247, 248, 248)',
+                        'dottet-border':'rgba(3, 7, 18, 0.2)',
+                        'common-btn-bg':'rgba(3, 7, 18, 0.05)',
 
                     }
                 }
@@ -90,8 +93,11 @@
 
         <!-- banner section -->
         <section class="h-[550px] bg-[url(images/banner.png)] bg-no-repeat mt-7 text-center text-white">
-            <h1 class="font-extrabold text-[64px] pt-[70px]">End-to-End Travel with <br><span class="text-nav-bus">P Paribahan</span></h1>
-            <p class="pb-8 inter-font">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined . </p>
+            <h1 class="font-extrabold text-[64px] pt-[70px]">End-to-End Travel with <br><span class="text-nav-bus">P
+                    Paribahan</span></h1>
+            <p class="pb-8 inter-font">Yes, you can run unit tests and view the results directly within the app. The
+                <br> integrated testing features allow for a streamlined .
+            </p>
             <button class="btn bg-nav-bus border-none px-8 font-bold text-[18px] text-button-text">Buy Tickets</button>
 
         </section>
@@ -119,7 +125,7 @@
                     <div class="pl-6 pt-14">
                         <h1 class="text-3xl font-bold">NEW15</h1>
                         <p class="text-xl font-medium">Coupon Code</p>
-                        
+
                     </div>
                 </div>
 
@@ -134,15 +140,90 @@
                     <div class="pl-6 pt-14">
                         <h1 class="text-3xl font-bold">Couple 20</h1>
                         <p class="text-xl font-medium">Coupon Code</p>
-                        
+
                     </div>
                 </div>
 
-                
+
             </div>
 
             <!-- button -->
-            <button class="btn mt-16 text-nav-bus border-[1px] border-nav-bus-border px-6 bg-white font-bold text-base">See All Offers</button>
+            <button
+                class="btn mt-16 text-nav-bus border-[1px] border-nav-bus-border px-6 bg-white font-bold text-base">See
+                All Offers</button>
+        </section>
+
+
+
+        <!-- Assignment main part -->
+        <section
+            class="bg-main-part h-[2208px] border-t-2 border-solid border-nav-bus rounded-tl-[88px] rounded-tr-[88px]">
+
+            <!-- site tile  -->
+            <div class="text-center mt-28 space-y-4">
+                <h1 class="font-bold text-[40px] text-button-text">P.H Paribahan</h1>
+                <p class="inter-font">Yes, you can run unit tests and view the results directly within the app. The
+                    integrated <br> testing features allow for a streamlined</p>
+            </div>
+
+            <!-- tecket -->
+            <section class="h-[418px] w-[1170px] bg-white mx-auto rounded-3xl mt-12 flex">
+
+                <section>
+                    <div class="p-8">
+
+                        <!-- bus image + number of seat  -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-4">
+                                <img class="" src="images/bus-logo.png" alt="">
+                                <div>
+                                    <h1 class="font-bold text-3xl">Greenline Paribahan</h1>
+                                    <p>Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+
+                            <button class="btn font-semibold text-xl text-nav-bus bg-nav-bus-bg px-5"><img
+                                    src="images/seat-green.png" alt=""> <span>40</span> Seats left</button>
+                        </div>
+                        <!-- Route and depertment time -->
+                        <div class="h-[258px] w-[808px] bg-main-part rounded-3xl p-8 mt-6">
+                            <div class="flex justify-between border-b-[2px] border-dashed border-dottet-border pb-6">
+                                <p>Route</p>
+                                <h4>Dhaka - Sylhet</h4>
+                            </div>
+
+                            <div class="flex justify-between py-6 border-b-[2px] border-dashed border-dottet-border">
+                                <p>Departure Time</p>
+                                <h4>9:00 PM</h4>
+                            </div>
+                            
+                            <div class="flex justify-between pt-6">
+                                <button class="w-[232px] btn font-medium text-base text-button-text bg-common-btn-bg">Boarding Point - Laxmipur</button>
+
+                                <button class="w-[232px] btn font-medium text-base text-button-text bg-common-btn-bg">Dropping Point - Bogura</button>
+
+                                <button class="w-[232px] btn font-medium text-base text-button-text bg-common-btn-bg">Est. Time - 11 Hour</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <img src="/images/info-devider.png" alt="">
+
+                <div class="flex flex-col justify-center text-center space-y-3 pl-7">
+                    <img class="w-10 ml-9" src="images/fare.png" alt="">
+                    <h1 class="font-bold text-3xl">550 Taka</h1>
+                    <p class="text-2xl">Per Seat</p>
+                </div>
+
+            </section>
+
+            
+
+
         </section>
 
     </main>
