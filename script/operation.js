@@ -124,6 +124,7 @@ function cupon(){
         const discount = totalPrice * 0.20;
         totalPrice = totalPrice - discount;
         totalGrandPriceElement.innerText = totalPrice;
+        cuponSection.classList.add('hidden');
     }
 
 
