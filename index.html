@@ -100,7 +100,8 @@
             <p class="pb-8 inter-font">Yes, you can run unit tests and view the results directly within the app. The
                 <br> integrated testing features allow for a streamlined .
             </p>
-            <button class="btn bg-nav-bus border-none px-8 font-bold text-[18px] text-button-text">Buy Tickets</button>
+            <button onclick="scrol()" class="btn bg-nav-bus border-none px-8 font-bold text-[18px] text-button-text">Buy
+                Tickets</button>
 
         </section>
 
@@ -158,7 +159,7 @@
 
 
         <!-- Assignment main part -->
-        <section
+        <section id="main-part"
             class="bg-main-part h-[1930px] border-t-2 border-solid border-nav-bus rounded-tl-[88px] rounded-tr-[88px]">
 
             <!-- site title  -->
@@ -232,14 +233,14 @@
 
 
             <!-- select your seat section -->
-            <section class="mt-7 h-[1056px] w-[1170px] mx-auto bg-white rounded-3xl p-8 flex">
+            <section class="mt-7 h-[1070px] w-[1170px] mx-auto bg-white rounded-3xl p-8 flex">
 
                 <!-- col-1 -->
                 <section class="flex-1 border-r-[2px] border-dashed border-black pr-8 m-8">
                     <h1 class="border-b-[2px] border-dashed border-dottet-border pb-6 font-semibold text-2xl">Select
                         Your Seat</h1>
 
-                    <div class="flex justify-between py-4 border-b-[2px] border-dashed border-dottet-border">
+                    <div class="flex justify-between py-6 border-b-[2px] border-dashed border-dottet-border">
 
                         <div class="flex gap-2">
                             <img src="images/seat-gray.png" alt="">
@@ -254,7 +255,7 @@
                     </div>
 
                     <div class="flex justify-end">
-                        <div class="my-6 btn font-medium text-base text-button-text bg-common-btn-bg px-8">
+                        <div class="my-8 btn font-medium text-base text-button-text bg-common-btn-bg px-8">
                             <img src="images/tabler-icon-steering-wheel.jpg" alt="">
                         </div>
                     </div>
@@ -277,51 +278,53 @@
                             </div>
 
                             <div class="common-button grid grid-cols-2 gap-x-8 gap-y-6">
-                                <button class="btn">A1</button>
-                                <button class="btn">A2</button>
-                                <button class="btn">B1</button>
-                                <button class="btn">B2</button>
-                                <button class="btn">C1</button>
-                                <button class="btn">C2</button>
-                                <button class="btn">D1</button>
-                                <button class="btn">D2</button>
-                                <button class="btn">E1</button>
-                                <button class="btn">E2</button>
-                                <button class="btn">F1</button>
-                                <button class="btn">F2</button>
-                                <button class="btn">G1</button>
-                                <button class="btn">G2</button>
-                                <button class="btn">H1</button>
-                                <button class="btn">H2</button>
-                                <button class="btn">I1</button>
-                                <button class="btn">I2</button>
-                                <button class="btn">J1</button>
-                                <button class="btn">J2</button>
+
+                                <button onclick="selectSeat('A1')" id="A1" class="btn">A1</button>
+                                <button onclick="selectSeat('A2')" id="A2" class="btn">A2</button>
+                                <button onclick="selectSeat('B1')" id="B1" class="btn">B1</button>
+                                <button onclick="selectSeat('B2')" id="B2" class="btn">B2</button>
+                                <button onclick="selectSeat('C1')" id="C1" class="btn">C1</button>
+                                <button onclick="selectSeat('C2')" id="C2" class="btn">C2</button>
+                                <button onclick="selectSeat('D1')" id="D1" class="btn">D1</button>
+                                <button onclick="selectSeat('D2')" id="D2" class="btn">D2</button>
+                                <button onclick="selectSeat('E1')" id="E1" class="btn">E1</button>
+                                <button onclick="selectSeat('E2')" id="E2" class="btn">E2</button>
+                                <button onclick="selectSeat('F1')" id="F1" class="btn">F1</button>
+                                <button onclick="selectSeat('F2')" id="F2" class="btn">F2</button>
+                                <button onclick="selectSeat('G1')" id="G1" class="btn">G1</button>
+                                <button onclick="selectSeat('G2')" id="G2" class="btn">G2</button>
+                                <button onclick="selectSeat('H1')" id="H1" class="btn">H1</button>
+                                <button onclick="selectSeat('H2')" id="H2" class="btn">H2</button>
+                                <button onclick="selectSeat('I1')" id="I1" class="btn">I1</button>
+                                <button onclick="selectSeat('I2')" id="I2" class="btn">I2</button>
+                                <button onclick="selectSeat('J1')" id="J1" class="btn">J1</button>
+                                <button onclick="selectSeat('J2')" id="J2" class="btn">J2</button>
 
                             </div>
                         </section>
 
                         <div class="common-button grid grid-cols-2 gap-x-8 gap-y-6">
-                            <button class="btn">A3</button>
-                            <button class="btn">A4</button>
-                            <button class="btn">B3</button>
-                            <button class="btn">B4</button>
-                            <button class="btn">C3</button>
-                            <button class="btn">C4</button>
-                            <button class="btn">D3</button>
-                            <button class="btn">D4</button>
-                            <button class="btn">E3</button>
-                            <button class="btn">E4</button>
-                            <button class="btn">F3</button>
-                            <button class="btn">F4</button>
-                            <button class="btn">G3</button>
-                            <button class="btn">G4</button>
-                            <button class="btn">H3</button>
-                            <button class="btn">H4</button>
-                            <button class="btn">I3</button>
-                            <button class="btn">I4</button>
-                            <button class="btn">J3</button>
-                            <button class="btn">J4</button>
+
+                            <button onclick="selectSeat('A3')" id="A3" class="btn">A3</button>
+                            <button onclick="selectSeat('A4')" id="A4" class="btn">A4</button>
+                            <button onclick="selectSeat('B3')" id="B3" class="btn">B3</button>
+                            <button onclick="selectSeat('B4')" id="B4" class="btn">B4</button>
+                            <button onclick="selectSeat('C3')" id="C3" class="btn">C3</button>
+                            <button onclick="selectSeat('C4')" id="C4" class="btn">C4</button>
+                            <button onclick="selectSeat('D3')" id="D3" class="btn">D3</button>
+                            <button onclick="selectSeat('D4')" id="D4" class="btn">D4</button>
+                            <button onclick="selectSeat('E3')" id="E3" class="btn">E3</button>
+                            <button onclick="selectSeat('E4')" id="E4" class="btn">E4</button>
+                            <button onclick="selectSeat('F3')" id="F3" class="btn">F3</button>
+                            <button onclick="selectSeat('F4')" id="F4" class="btn">F4</button>
+                            <button onclick="selectSeat('G3')" id="G3" class="btn">G3</button>
+                            <button onclick="selectSeat('G4')" id="G4" class="btn">G4</button>
+                            <button onclick="selectSeat('H3')" id="H3" class="btn">H3</button>
+                            <button onclick="selectSeat('H4')" id="H4" class="btn">H4</button>
+                            <button onclick="selectSeat('I3')" id="I3" class="btn">I3</button>
+                            <button onclick="selectSeat('I4')" id="I4" class="btn">I4</button>
+                            <button onclick="selectSeat('J3')" id="J3" class="btn">J3</button>
+                            <button onclick="selectSeat('J4')" id="J4" class="btn">J4</button>
 
                         </div>
 
@@ -336,7 +339,7 @@
                         Your Seat</h1>
 
                     <!-- subsection -->
-                    <section class="h-[335px] w-[433px] bg-main-part rounded-xl p-8 mt-6">
+                    <section class="w-[433px] bg-main-part rounded-xl py-6 px-8 mt-6">
 
                         <div class="flex justify-between border-b-[2px] border-dashed border-dottet-border pb-4">
                             <p>Seat</p>
@@ -344,23 +347,23 @@
                             <p>Price</p>
                         </div>
 
-                        <div class="space-y-3 my-4 border-b-[1px] border-solid border-dottet-border pb-4">
+                        <div id="target-section" class="space-y-2 my-2 border-b-[1px] border-solid border-dottet-border pb-4">
+                            <!-- <div class="flex justify-between">
+                                <p id="selected-seat-number">No.</p>
+                                <p>Economoy</p>
+                                <p>550</p>
+                            </div> -->
+                            <!-- 
                             <div class="flex justify-between">
                                 <p>A1</p>
                                 <p>Economoy</p>
                                 <p>550</p>
-                            </div>
-
-                            <div class="flex justify-between">
-                                <p>A1</p>
-                                <p>Economoy</p>
-                                <p>550</p>
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="flex justify-between">
                             <p>Total Price</p>
-                            <p>BDT <span>1100</span></p>
+                            <p>BDT <span id="total-price">0</span></p>
                         </div>
 
                         <div class="w-full h-14 bg-white rounded-xl flex justify-between pl-4 my-4">
@@ -412,12 +415,6 @@
 
             </section>
 
-
-
-
-
-
-
         </section>
 
     </main>
@@ -453,6 +450,11 @@
         </div>
 
     </footer>
+
+
+    <script src="script/utility.js"></script>
+    <script src="script/operation.js"></script>
+    <script src="script/style.js"></script>
 
 </body>
 
