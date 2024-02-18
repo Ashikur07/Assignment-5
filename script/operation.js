@@ -1,102 +1,43 @@
+// seat related operation (maximum)
 function selectSeat(event) {
     const findButton = document.getElementById(event);
     const buttonText = findButton.innerText;
 
-    // find the target section
-    const targetSection = document.getElementById('target-section');
-
-    // find the number of element of target section
-    const numberOfElement = targetSection.children.length;
-    console.log(numberOfElement);
-
-
-    // decreace total seat 
-
-
-
+    // call find the number of innerChild function to get value
+    const numberOfElement = innerChildNumber('target-section')
 
     // condition check
     if (numberOfElement <= 3) {
 
-        
-
-        // add new element 
-        const addedSeat = document.createElement('div');
-
-        const p1 = document.createElement('p');
-        p1.innerText = buttonText;
-        addedSeat.appendChild(p1);
-
-        const p2 = document.createElement('p');
-        p2.innerText = 'Economoy';
-        addedSeat.appendChild(p2);
-
-        const p3 = document.createElement('p');
-        p3.innerText = '550';
-        addedSeat.appendChild(p3);
-
-        targetSection.appendChild(addedSeat);
-
-        //added style 
-        addedSeat.style.display = 'flex';
-        addedSeat.style.justifyContent = 'space-between';
-
+        // call the function and append child
+        appendNewChild('target-section', buttonText);
 
         // Button background collor set
-        console.log(typeof buttonText);
         setBackgroundColorById(buttonText);
 
+        // set total price
+        setTotalPrice('total-price', numberOfElement);
 
+        // set grand Total price
+        grandTotalPrice('grand-total-price', 'total-price')
 
-
-        // find the total price 
-        let findTotalPrice = 550;
-        findTotalPrice = findTotalPrice + (numberOfElement * 550);
-        console.log(findTotalPrice);
-
-        // Total price
-        const totalPriceElement = document.getElementById('total-price');
-        totalPriceElement.innerText = findTotalPrice;
-
-        // Grand total price 
-        const totalGrandPriceElement = document.getElementById('grand-total-price');
-        totalGrandPriceElement.innerText = findTotalPrice;
-
-
-
-
-        // decrease total seat 
-        let totalSeatDecrease = document.getElementById("total-seat-count");
-        let totalSeatText = totalSeatDecrease.innerText;
-        let totalSeatNumber = parseInt(totalSeatText);
-        totalSeatNumber = totalSeatNumber - 1;
-        totalSeatDecrease.innerText = totalSeatNumber;
-        console.log(totalSeatNumber);
-
+        // decrease total seat
+        totalSeatDecrease('total-seat-count');
 
         // increase select seat
-        let totalSelectSeat = document.getElementById('select-seat-number')
-        let totalSelectSeatNumber = parseInt(totalSelectSeat.innerText);
-        totalSelectSeatNumber = totalSelectSeatNumber + 1;
-        totalSelectSeat.innerText = totalSelectSeatNumber;
+        increaseSelectSeat('select-seat-number');
 
-
-
-       
-        // // user information section
+        // Enable Net button
         const submitInformation = document.getElementById('submit-information');
         submitInformation.removeAttribute('disabled');
-
-
     }
-
 
 }
 
 
 
-function cupon(){
-    // console.log('ashik');
+function cupon() {
+
     const getCuponCode = document.getElementById('cupon-code');
     const CuponCode = getCuponCode.value;
 
@@ -109,39 +50,19 @@ function cupon(){
 
     // find cupon section
     const cuponSection = document.getElementById('cupon-section');
-   
 
-
-    if (CuponCode == 'NEW15'){
+    if (CuponCode == 'NEW15') {
         const discount = totalPrice * 0.15;
         totalPrice = totalPrice - discount;
         totalGrandPriceElement.innerText = totalPrice;
         cuponSection.classList.add('hidden');
-
     }
 
-    else if(CuponCode == 'Couple 20'){
+    else if (CuponCode == 'Couple 20') {
         const discount = totalPrice * 0.20;
         totalPrice = totalPrice - discount;
         totalGrandPriceElement.innerText = totalPrice;
         cuponSection.classList.add('hidden');
     }
 
-
-
-
-    // console.log(CuponCode);
-}
-
-
-function submitInformation(){
-    const number = document.getElementById('number-value');
-    const name = document.getElementById('name-value');
-    const email = document.getElementById('email-value');
-
-    number.value = '';
-    name.value = '';
-    email.value = '';
-    
-    
 }
