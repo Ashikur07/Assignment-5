@@ -1,7 +1,14 @@
 /* font-medium text-base text-button-text bg-common-btn-bg px-10 */
 .common-button button{
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 18px;
     padding: 0px 40px 0px 40px;
+    color: #7d7373;
 
+}
+
+.seat-number p{
+    color: #7d7373;
+    font-weight: 600;
+    font-size: 18px;
 }
