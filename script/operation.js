@@ -2,12 +2,23 @@
 function selectSeat(event) {
     const findButton = document.getElementById(event);
     const buttonText = findButton.innerText;
+    console.log(buttonText);
+
+
+    // Check this Seat is already select or not
+    const checkArray = [];
+    const checkChildren = document.getElementById('target-section');
+    const checkChildrenValue = checkChildren.getElementsByTagName('p');
+    for(const child of checkChildrenValue){
+        checkArray.push(child.innerText);
+    }
 
     // call find the number of innerChild function to get value
-    const numberOfElement = innerChildNumber('target-section')
+    const numberOfElement = innerChildNumber('target-section');
+   
 
     // condition check
-    if (numberOfElement <= 3) {
+    if (numberOfElement <= 3 && checkArray.includes(buttonText) !== true) {
 
         // call the function and append child
         appendNewChild('target-section', buttonText);
@@ -30,6 +41,10 @@ function selectSeat(event) {
         // Enable Net button
         const submitInformation = document.getElementById('submit-information');
         submitInformation.removeAttribute('disabled');
+
+        //
+
+        
     }
 
 }
